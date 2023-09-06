@@ -7,9 +7,16 @@
 
 
 Algoritmo trabajoFinal
+	Definir palitoDeAgua Como Entero
+	Definir precioPalitoDeAgua Como Entero
 	
 	
 	
+	
+	
+	
+	
+	precioPalitoDeAgua = 1
 	
 	Escribir "Bienvenido a Date Un Gusto"
 	Escribir "Tu heladeria preferida :D"
@@ -28,17 +35,34 @@ Algoritmo trabajoFinal
 	Leer OP 
 	Segun OP Hacer
 		1:
-			Escribir "ingrese la cantidad de palitos de agua que desea comprar"
+			Escribir "Ingrese la cantidad de palitos de agua que desea comprar"
 			Leer palitoDeAgua
-			Escribir "Devera abonar la cantidad de " ,(palitoDeAgua*precioPalitoDeAgua) "$"
+			Escribir "Debera abonar la cantidad de " ,(palitoDeAgua*precioPalitoDeAgua) "$"
 		2:
-			Escribir "ingrese la cantidad de litros cargados de Nafta"
+			Escribir "Ingrese la cantidad de palitos de bombon que desea comprar"
 			Leer palitoBombon
 			Escribir "Devera abonar la cantidad de " ,(palitoBombon*2) "$"
 		3:
-			Escribir "ingrese la cantidad de litros cargados de Gasoil"
+			Escribir "Elija 2 gustos de helado"
+			Escribir "1. Chocolate"
+			Escribir "2. Chocolate blanco"
+			Escribir "3. Chocolate granizado"
+			Escribir "4. Dulce de leche"
+			Escribir "5. Super dulce de leche"
+			Escribir "6. Americana"
+			Escribir "7. Tramontana"
+			Escribir "8. Frutilla"
+			Escribir "9. Limon"
 			Leer artesanalUnCuarto
 			Escribir "Devera abonar la cantidad de " ,(artesanalUnCuarto*3) "$"
+		4:Escribir "Elija 3 gustos de helado"
+			
+			
+		5:Escribir "Elija 4 gustos de helado"
+			
+			
+		6:
+			
 		
 	FinSegun
 	
