@@ -50,15 +50,15 @@ Algoritmo trabajoFinal
 	Escribir "Preciona una tecla para continuar"
 	Leer tecla
 	Limpiar Pantalla
-	Escribir "################# MENU ###############"
-	Escribir " 1. Palito de agua $1"
-	Escribir " 2. Palito bombon $2"
-	Escribir " 3. 1/4 Kg helado artesanal (2 gustos a eleccion) $3"
-	Escribir " 4. 1/2 Kg helado artesanal (3 gustos a eleccion) $4"
-	Escribir " 5. 1 Kg helado artesanal (4 gustos a eleccion) $5"
-	Escribir " 6. Balde 3Lts 3 gustos(vainilla, dulce de leche, Chocolate) $6"
-	Escribir " 0. Salir"
-	Escribir "##############################################"
+	Escribir "############################# MENU ###############################"
+	Escribir "|======================1. PALITO DE AGUA $1======================|"
+	Escribir "|======================2. PALITO BOMBON $2=======================|"
+	Escribir "|=======3. 1/4 KG HELADO ARTESANAL (2 gustos a eleccion) $3======|"
+	Escribir "|======4. 1/2 KG HELADO ARTESANAL (3 gustos a eleccion) $4=======|"
+	Escribir "|========5. 1 KG HELADO ARTESANAL (4 gustos a eleccion) $5=======|"
+	Escribir "|=6. BALDE 3LTS 3 GUSTOS(vainilla, dulce de leche, Chocolate) $6=|" 
+	Escribir "|==========================0. SALIR==============================|"
+	Escribir "##################################################################"
 	Escribir "Seleccione una opcion"
 	Leer opcionUsuario
 	
