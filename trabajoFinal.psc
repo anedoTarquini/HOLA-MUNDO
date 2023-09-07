@@ -26,13 +26,20 @@ Algoritmo trabajoFinal
 	Definir precioArtesanalUnKilo Como Entero
 	Definir precioBalde3Litros Como Entero
 	
-		
-	precioPalitoDeAgua = 1
-	precioPalitoBombon = 2
-	precioArtesanalUnCuarto = 3
-	precioArtesanalMedio = 4
-	precioArtesanalUnKilo = 5
-	precioBalde3Litros = 6
+	Definir totalPalitoDeAgua Como Entero
+	Definir totalPalitoBombon Como Entero
+	Definir totalArtesanalUnCuarto Como Entero
+	Definir totalArtesanalMedio Como Entero
+	Definir totalArtesanalUnKilo Como Entero
+	Definir totalBalde3Litros Como Entero
+	
+	
+	precioPalitoDeAgua = 50
+	precioPalitoBombon = 100
+	precioArtesanalUnCuarto = 250
+	precioArtesanalMedio = 400
+	precioArtesanalUnKilo = 600
+	precioBalde3Litros = 500
 	
 	
 	
@@ -50,6 +57,9 @@ Algoritmo trabajoFinal
 	Escribir "Preciona una tecla para continuar"
 	Leer tecla
 	Limpiar Pantalla
+	
+	Repetir
+	
 	Escribir "############################# MENU ###############################"
 	Escribir "|======================1. PALITO DE AGUA $1======================|"
 	Escribir "|======================2. PALITO BOMBON $2=======================|"
@@ -57,7 +67,8 @@ Algoritmo trabajoFinal
 	Escribir "|======4. 1/2 KG HELADO ARTESANAL (3 gustos a eleccion) $4=======|"
 	Escribir "|========5. 1 KG HELADO ARTESANAL (4 gustos a eleccion) $5=======|"
 	Escribir "|=6. BALDE 3LTS 3 GUSTOS(vainilla, dulce de leche, Chocolate) $6=|" 
-	Escribir "|==========================0. SALIR==============================|"
+	Escribir "|====================7. CONFIRMAR COMPRA=========================|"
+	//Escribir "|==========================0. SALIR==============================|"
 	Escribir "##################################################################"
 	Escribir "Seleccione una opcion"
 	Leer opcionUsuario
@@ -65,16 +76,39 @@ Algoritmo trabajoFinal
 	
 	Segun opcionUsuario Hacer
 		1:
-			Escribir "Ingrese la cantidad de palitos de agua que desea comprar"
-			Leer palitoDeAgua
-			Escribir "Debera abonar la cantidad de " ,(palitoDeAgua*precioPalitoDeAgua) "$"
+			Repetir
+				
 			
+			Escribir "Que gusto desea"
+			Escribir "1. Frutilla"
+			Escribir "2. Limon"
+			Escribir "3. Durazno"
+			Escribir "4. Anana"
+			Leer Gusto 
+			Segun Gusto
+				
+				De Otro Modo:
+					Escribir "Ingrese una opcion valida"
+					Limpiar Pantalla
+			FinSegun
+			Hasta Que Gusto >= 1 y Gusto <=4
+			
+			Escribir "Ingrese la cantidad de palitos de agua que quiere comprar"
+			Leer palitoDeAgua
+			
+			totalPalitoDeAgua = palitoDeAgua*precioPalitoDeAgua
+			Limpiar Pantalla
 			
 		2:
 			Escribir "Ingrese la cantidad de palitos de bombon que desea comprar"
 			Leer palitoBombon
-			Escribir "Debera abonar la cantidad de " ,(palitoBombon*2) "$"
+			
+			totalPalitoBombon = palitoBombon*precioPalitoBombon
+			Limpiar Pantalla
 		3:
+			Repetir
+				
+			
 			Escribir "Elija 2 gustos de helado"
 			Escribir "1. Chocolate"
 			Escribir "2. Chocolate blanco"
@@ -85,12 +119,24 @@ Algoritmo trabajoFinal
 			Escribir "7. Tramontana"
 			Escribir "8. Frutilla"
 			Escribir "9. Limon"
-			Leer OP 
-			Leer OP 	
+			Leer Gusto 
+			Leer Gusto
 			
-			Escribir "Debera abonar la cantidad de " ,(precioArtesanalUnCuarto) "$"
+			Segun Gusto
+				
+				De Otro Modo:
+					Escribir "Ingrese una opcion valida"
+					Limpiar Pantalla
+			FinSegun
+		Hasta Que Gusto >= 1 y Gusto <=9
 			
+			
+			totalArtesanalUnCuarto = precioArtesanalUnCuarto
+			Limpiar Pantalla
 		4:
+			Repetir
+				
+			
 			Escribir "Elija 3 gustos de helado"
 			Escribir "1. Chocolate"
 			Escribir "2. Chocolate blanco"
@@ -101,15 +147,25 @@ Algoritmo trabajoFinal
 			Escribir "7. Tramontana"
 			Escribir "8. Frutilla"
 			Escribir "9. Limon"
-			Leer OP 
-			Leer OP 	
-			Leer OP 
+			Leer Gusto 
+			Leer Gusto
+			Leer Gusto
+			Segun Gusto
+				
+				De Otro Modo:
+					Escribir "Ingrese una opcion valida"
+					Limpiar Pantalla
+			FinSegun
+		Hasta Que Gusto >= 1 y Gusto <=9
 			
-			Escribir "Debera abonar la cantidad de " ,(precioArtesanalMedio) "$"
 			
-			
+			totalArtesanalMedio = precioArtesanalMedio
+			Limpiar Pantalla
 			
 		5:
+			Repetir
+				
+			 
 			Escribir "Elija 4 gustos de helado"
 			Escribir "1. Chocolate"
 			Escribir "2. Chocolate blanco"
@@ -120,20 +176,50 @@ Algoritmo trabajoFinal
 			Escribir "7. Tramontana"
 			Escribir "8. Frutilla"
 			Escribir "9. Limon"
-			Leer OP 
-			Leer OP 	
-			Leer OP 
-			Leer OP 
+			Leer Gusto 
+			Leer Gusto
+			Leer Gusto
+			Leer Gusto
+			Segun Gusto
+				
+				De Otro Modo:
+					Escribir "Ingrese una opcion valida"
+					Limpiar Pantalla
+			FinSegun
+		Hasta Que Gusto >= 1 y Gusto <=9
 			
-			Escribir "Debera abonar la cantidad de " ,(precioArtesanalUnKilo) "$"
+			
+			totalArtesanalUnKilo = precioArtesanalUnKilo
+			Limpiar Pantalla
 			
 		6:
 			Escribir "Ingrese la cantidad de balde de 3Lts que desea comprar"
 			Leer balde3Litros
-			Escribir "Debera abonar la cantidad de " ,(balde3Litros*precioBalde3Litros) "$"
 			
-		0: 
-			Escribir "Esperamos verlo pronto"
+			totalBalde3Litros = balde3Litros*precioBalde3Litros
+			Limpiar Pantalla
+			
+		7:
+			Limpiar Pantalla
+			Escribir "#### Muchas gracias por su compra"
+			Escribir "#### Detalle de factura"
+			Escribir "#### Palitos de agua " totalPalitoDeAgua " $"
+			Escribir "#### Palitos bombon " totalPalitoBombon " $"
+			Escribir "#### Helado artesanal " totalArtesanalUnCuarto+totalArtesanalMedio+totalArtesanalUnKilo " $"
+			Escribir "#### Helado balde 3Lts " totalBalde3Litros " $"
+			Escribir "#### Total de compra " totalPalitoDeAgua+totalPalitoBombon+totalArtesanalUnCuarto+totalArtesanalMedio+totalArtesanalUnKilo+totalBalde3Litros " $"
+			Si totalPalitoDeAgua+totalPalitoBombon+totalArtesanalUnCuarto+totalArtesanalMedio+totalArtesanalUnKilo+totalBalde3Litros >= 1000 Entonces
+				Escribir "SU PEDIDO TIENE ENVIO GRATIS"
+			SiNo
+				Escribir  "DEBERA ABONAR 100$ MAS POR GASTOS DE ENVIO"
+			FinSi
+			
+			
+			//Escribir "debera abonar el total de " totalPalitoDeAgua+totalPalitoBombon+totalArtesanalUnCuarto+totalArtesanalMedio+totalArtesanalUnKilo+totalBalde3Litros "$"
+			
+			
+			
+			
 			
 		De Otro Modo:
 			Escribir "Ingrese una opcion valida"
@@ -142,6 +228,8 @@ Algoritmo trabajoFinal
 	
 	
 	
+	
+Hasta Que opcionUsuario = 7
 	
 	
 	
