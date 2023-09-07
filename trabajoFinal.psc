@@ -1,6 +1,6 @@
-// se busca crear un programa con la finalidad de poder hacer pedidos en una heladeria, pudiendo seleccionar la cantidad, gusto, tipo de helado y si se quiere envio a domicilio
+// se busca crear un programa con la finalidad de poder hacer pedidos en una heladeria por cadeteria, pudiendo seleccionar la cantidad, gusto, tipo de helado
 //eleccion de pedido: debe poder dar las opciones al usuario para realizar el pedido.
-//valor del pedido: al finalizar el pedido podra ver el total a pagar, retirando en el local o con envio
+//valor del pedido: al finalizar el pedido podra ver el total a pagar y si corresponde abonar el envio
 //interfaz usuario: se busca una interfaz agil y de facil manipulacion para insentivar a los clientes a usarla y asi no gastar recursos humanos atendiendo telefono o personalmente.
 
 
@@ -60,15 +60,15 @@ Algoritmo trabajoFinal
 	
 	Repetir
 	
-	Escribir "############################# MENU ###############################"
-	Escribir "|======================1. PALITO DE AGUA $1======================|"
-	Escribir "|======================2. PALITO BOMBON $2=======================|"
-	Escribir "|=======3. 1/4 KG HELADO ARTESANAL (2 gustos a eleccion) $3======|"
-	Escribir "|======4. 1/2 KG HELADO ARTESANAL (3 gustos a eleccion) $4=======|"
-	Escribir "|========5. 1 KG HELADO ARTESANAL (4 gustos a eleccion) $5=======|"
-	Escribir "|=6. BALDE 3LTS 3 GUSTOS(vainilla, dulce de leche, Chocolate) $6=|" 
-	Escribir "|====================7. CONFIRMAR COMPRA=========================|"
-	//Escribir "|==========================0. SALIR==============================|"
+	Escribir "############################## MENU ################################"
+	Escribir "|=======================1. PALITO DE AGUA $50======================|"
+	Escribir "|======================2. PALITO BOMBON $100=======================|"
+	Escribir "|=======3. 1/4 KG HELADO ARTESANAL (2 gustos a eleccion) $250======|"
+	Escribir "|======4. 1/2 KG HELADO ARTESANAL (3 gustos a eleccion) $400=======|"
+	Escribir "|========5. 1 KG HELADO ARTESANAL (4 gustos a eleccion) $600=======|"
+	Escribir "|=6. BALDE 3LTS 3 GUSTOS(vainilla, dulce de leche, Chocolate) $500=|" 
+	Escribir "|====================7. CONFIRMAR COMPRA==========================|"
+	
 	Escribir "##################################################################"
 	Escribir "Seleccione una opcion"
 	Leer opcionUsuario
@@ -215,7 +215,7 @@ Algoritmo trabajoFinal
 			FinSi
 			
 			
-			//Escribir "debera abonar el total de " totalPalitoDeAgua+totalPalitoBombon+totalArtesanalUnCuarto+totalArtesanalMedio+totalArtesanalUnKilo+totalBalde3Litros "$"
+			
 			
 			
 			
